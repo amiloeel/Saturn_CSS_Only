@@ -1,0 +1,249 @@
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height:300px;
+    width: 300px;
+    margin-top: 250px;
+}
+
+#inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    rotate: 20deg;
+}
+
+#author{
+    text-align:center;
+    font-family: monospace;
+    color:orange;
+}
+
+#saturn{
+    height: 120px;
+    width: 120px;
+    background-color: #5e3a00;
+    border-radius: 50%;
+    
+}
+
+#saturnMask1{
+    height: 5px;
+    width: 33px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 80;
+    background: linear-gradient(270deg,#543e00,#ffbb00);
+        margin-top: -114px;
+    
+}
+
+#saturnMask2{
+    height: 11px;
+    width: 52px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 70;
+    background: linear-gradient(270deg,#664200,#bd6900);
+        margin-top: -106px;
+    
+}
+
+#saturnMask3{
+    height: 21px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 60;
+    background: linear-gradient(270deg,#6a4500,#ffc455);
+    margin-top: -94px;
+    
+}
+
+#saturnMask4{
+    height: 31px;
+    width: 88px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 53;
+    background: linear-gradient(270deg,#4a3400,#d3ba81);
+    margin-top: -76px;
+    
+}
+
+#saturnMask5{
+    height: 35px;
+    width: 95px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 52;
+    background: linear-gradient(270deg,#684103,#cb7c00);
+    margin-top: -68px;
+    
+}
+
+#saturnMask6{
+    height: 39px;
+    width: 103px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 51;
+    background: linear-gradient(270deg,#563d09,#c9a254);
+    margin-top: -58px;
+    
+}
+
+#saturnMask7{
+    height: 104px;
+    width: 119px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    background: linear-gradient(270deg,#5a3c0c,#c17602);
+    margin-top: -17px;
+    
+}
+
+#saturnMask8{
+    height: 112px;
+    width: 119px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(270deg, #423210 , #ffcb61);
+    margin-top: -8px;
+    box-shadow: 0px 0px 45px 7px #825619;
+    animation: glowSaturn 3s ease-in-out infinite, grow 3s ease-in-out infinite;;
+}
+
+
+
+@keyframes glowSaturn {
+    33.3%{
+        box-shadow: 0px 0px 45px 7px #825619;
+    }66.6%{
+        box-shadow: 0px 0px 16px 7px #825619;
+    }100%{
+        box-shadow: 0px 0px 45px 7px #825619;
+    }
+}
+
+#ring{
+    border-radius: 50%;
+    border-right: 24px solid #896e49;
+    height: 300px;
+    border-bottom: 72px solid #896e49;
+    position: absolute;
+    border-left: 24px solid #896e49;
+    width: 300px;
+    z-index: 11;
+    transform: rotateX(281deg);
+    box-shadow: 0px 0px 30px 37px #886e4c54, inset 0px 0px 20px 37px #886e4cba;
+    animation: glowRing1 3s ease-in-out infinite, shrink 3s ease-in-out infinite;
+}
+
+@keyframes glowRing1 {
+    33.3%{
+        box-shadow: 0px 0px 30px 37px #886e4c54, inset 0px 0px 20px 37px #886e4cba;;
+    }66.6%{
+        box-shadow: 0px 0px 43px 15px #886e4c54, inset 0px 0px 20px 37px #b573008a;
+    }100%{
+        box-shadow: 0px 0px 30px 37px #886e4c54, inset 0px 0px 20px 37px #886e4cba;;
+    }
+}
+
+@keyframes shrink {
+    33.3%{
+        scale:1;
+    }66.6%{
+        scale:0.95;
+    }100%{
+        scale:1;
+    }
+}
+
+#ring2{
+    border-radius: 50%;
+    border-right: 30px solid #4e2d00;
+    height: 178px;
+    border-bottom: 72px solid #4e2d00;
+    position: absolute;
+    border-left: 30px solid #4e2d00;
+    width: 247px;
+    z-index: 11;
+    margin-top: -19px;
+    transform: rotateX(282deg);
+    box-shadow:inset 0px 0px 53px 13px #4d2d05;
+    animation: shrink 3s ease-in-out infinite;
+}
+
+#orbit1{
+    transform: rotateX(76deg);
+    z-index: 50;
+}
+
+#titanOrbit{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 20;
+    animation: spin 4s linear infinite;
+}
+
+#titanOrbit div:nth-child(2){
+    margin-left: -22px;
+    margin-top: 200px;
+}
+
+#titanOrbit div:nth-child(3){
+    margin-left: 109px;
+    margin-top: 357px;
+}
+
+#titanOrbit div:nth-child(4){
+    margin-left: -22px;
+    margin-top: 169px;
+}
+
+#titanOrbit div:nth-child(5){
+    margin-left: 35px;
+    margin-top: 200px;
+    left: 300px;
+}
+
+#titanOrbit div:nth-child(6){
+    margin-left: -22px;
+    margin-top: 200px;
+    left: 300px;
+}
+
+#titanOrbit div:nth-child(7){
+    margin-left: 109px;
+    margin-top: 357px;
+    left:46px;
+}
+
+
+.titan{
+    height: 3px;
+    width: 3px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 20;
+    position: absolute;
+    box-shadow: 0px 0px 11px 4px #7c7c7c;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    background-color: black;
+}
